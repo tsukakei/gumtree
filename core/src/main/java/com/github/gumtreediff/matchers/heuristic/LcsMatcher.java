@@ -41,7 +41,7 @@ public class LcsMatcher extends Matcher {
         List<ITree> srcSeq = TreeUtils.preOrder(src);
         List<ITree> dstSeq = TreeUtils.preOrder(dst);
         List<int[]> lcs = StringAlgorithms.lcss(srcSeq, dstSeq);
-        System.out.println(lcs.size());
+        //System.out.println(lcs.size());
         for (int[] x: lcs) {
 
             ITree t1 = srcSeq.get(x[0]);
